@@ -5,7 +5,7 @@ This reverse proxy setup routes requests to your 4 API endpoints:
 - `/auth/` - Authentication service
 - `/assets/` - Assets management service  
 - `/collections/` - Collections service
-- `/graphql` - GraphQL query endpoint
+- `/query` - GraphQL query endpoint
 
 ## Quick Start
 
@@ -27,7 +27,7 @@ This reverse proxy setup routes requests to your 4 API endpoints:
    curl http://localhost/auth/status
    curl http://localhost/assets/
    curl http://localhost/collections/
-   curl -X POST http://localhost/graphql -H "Content-Type: application/json" -d '{"query":"{ __schema { types { name } } }"}'
+   curl -X POST http://localhost/query -H "Content-Type: application/json" -d '{"query":"{ __schema { types { name } } }"}'
    ```
 
 ## Configuration
